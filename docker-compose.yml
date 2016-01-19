@@ -1,0 +1,12 @@
+---
+base:
+  build: .
+  privileged: true
+  working_dir: /app/
+  volumes:
+    - ".:/app"
+
+setup:
+  extends:
+    service: base
+  command: lb build

@@ -1,0 +1,10 @@
+live-image*
+.build
+cache
+chroot
+*.log
+binary
+*.files
+*.install
+*.live
+.lock
