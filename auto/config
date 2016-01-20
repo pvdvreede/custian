@@ -3,6 +3,9 @@
 set -e
 
 lb config noauto \
+    --distribution jessie \
     --architectures amd64 \
     --archive-areas "main contrib non-free" \
+    --mirror-bootstrap "http://httpredir.debian.org/debian" \
+    --bootappend-live "boot=live components locales=en_AU.UTF-8" \
 	"${@}"
