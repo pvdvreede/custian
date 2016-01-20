@@ -7,4 +7,5 @@ binary
 *.files
 *.install
 *.live
+*.iso
 .lock
