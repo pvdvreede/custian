@@ -1,0 +1,3 @@
+[submodule "config/includes.chroot/etc/skel/.oh-my-zsh"]
+	path = config/includes.chroot/etc/skel/.oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
