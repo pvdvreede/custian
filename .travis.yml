@@ -23,6 +23,15 @@ before_script:
 script:
   - docker-compose run setup
 
+deploy:
+  provider: releases
+  api_key:
+    secure: DCOUpY3RwYsn4SApkw0xZC6xHC/c6jP8t180DUotaVfY4JEKU+nm0NtyOzT31rwUHBF60VBVl7+0EZd8b3BXFjopz64E4NYDlER+VrFUoDztCOLs/Xzi6WSHRCGyCijyPznEzxgQCCQ1lg/mksUiQqPrd2vm3xfZr2MLIRlEj/GlTZcYg9wEeKO3bg9A2WNjCpkGdGMcSz5PF/g/B49MkbZvghmwZcVkMBqnixlHgsoOU0BqUdWCvk1nUEnuc7rcz6ZbRgiYjFU5GAUwEwk0AZD28jUVh9HTLtR7rvbe/IDpygmqUAG5Q5G/AdojS8UWs9vvS5HusEn5iuStWdAJFl+eE2i0/qxfypQzJdiRQj5Y71//wKSaJON+q5l2RkTWhDjF8Jcasjea6+SmpBFeFTFwciocCQR2QabtTvSN1gl2Ymn6RdlJ/KfkZCBhG60IdV5p1TfbFaxOpUET6GXFAnbPUAPLcmXdFbF0LfvvfY9TXXdoZQEWVnwTmg5GHRVZdjpd8MUaUsocyn6OPafq+JvYIbExdeVohhHmRunY0QBLBy0II3iEsDEW+TiACCHDkRdoa/qYB/EYfzcHXkIcSeXqbZOcixnVzPmbAKx0bYFE/7M2+csoB9G3WkX28/8yYzd/ViqFy/inUpYchpo3Gq6+38+JAuUuArM9NxI+7GQ=
+  file: live-image-amd64.hybrid.iso
+  skip_cleanup: true
+  on:
+    tags: true
+
 cache:
   apt: true
   directories:
