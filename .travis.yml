@@ -1,10 +1,6 @@
 ---
 sudo: required
 
-cache:
-  directories:
-    - ./cache
-
 services:
   - docker
 
@@ -20,5 +16,14 @@ before_install:
 install:
   - docker-compose build
 
+before_script:
+  - docker-compose run setup lb clean
+  - docker-compose run setup lb clean --binary
+
 script:
   - docker-compose run setup
+
+cache:
+  apt: true
+  directories:
+    - cache
