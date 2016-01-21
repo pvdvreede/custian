@@ -17,11 +17,11 @@ install:
   - docker-compose build
 
 before_script:
-  - docker-compose run setup lb clean
-  - docker-compose run setup lb clean --binary
+  - docker-compose run clean
+  - docker-compose run clean lb clean --binary
 
 script:
-  - docker-compose run setup
+  - docker-compose run build
 
 deploy:
   provider: releases

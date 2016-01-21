@@ -6,7 +6,17 @@ base:
   volumes:
     - ".:/app"
 
-setup:
+config:
+  extends:
+    service: base
+  command: lb config
+
+build:
   extends:
     service: base
   command: lb build
+
+clean:
+  extends:
+    service: base
+  command: lb clean
