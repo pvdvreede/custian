@@ -1,8 +1,9 @@
-apt-transport-https
 git
 vim
 zsh
 tmux
 htop
 tree
+python-pip
+openssh-client
 
