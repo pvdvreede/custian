@@ -14,7 +14,7 @@ config:
 build:
   extends:
     service: base
-  command: lb build
+  command: lb build --quiet
 
 clean:
   extends:
