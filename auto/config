@@ -8,4 +8,5 @@ lb config noauto \
     --archive-areas "main contrib non-free" \
     --mirror-bootstrap "http://httpredir.debian.org/debian" \
     --bootappend-live "boot=live components locales=en_AU.UTF-8" \
+    --grub-splash "custian-logo.png" \
 	"${@}"
