@@ -1,3 +1,15 @@
 [submodule "config/includes.chroot/etc/skel/.oh-my-zsh"]
 	path = config/includes.chroot/etc/skel/.oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "config/includes.chroot/etc/skel/.vim/bundle/vim-pathogen"]
+	path = config/includes.chroot/etc/skel/.vim/bundle/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "config/includes.chroot/etc/skel/.vim/bundle/vim-airline"]
+	path = config/includes.chroot/etc/skel/.vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "config/includes.chroot/etc/skel/.vim/bundle/ctrlp.vim"]
+	path = config/includes.chroot/etc/skel/.vim/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "config/includes.chroot/etc/skel/.vim/bundle/vim-easy-align"]
+	path = config/includes.chroot/etc/skel/.vim/bundle/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align.git
