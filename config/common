@@ -111,8 +111,8 @@ LB_TEMPLATES="/usr/share/live/build/templates"
 #_FORCE="false"
 
 # $_QUIET: enable quiet
-# (Default: false)
-_QUIET="false"
+# (Default: true)
+_QUIET="true"
 
 # $_VERBOSE: enable verbose
 # (Default: false)
