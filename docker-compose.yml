@@ -1,5 +1,5 @@
 ---
-base:
+defaults: &defaults
   build: .
   privileged: true
   working_dir: /app/
@@ -7,16 +7,13 @@ base:
     - ".:/app"
 
 config:
-  extends:
-    service: base
+  <<: *defaults
   command: lb config
 
 build:
-  extends:
-    service: base
+  <<: *defaults
   command: lb build --quiet
 
 clean:
-  extends:
-    service: base
+  <<: *defaults
   command: lb clean
