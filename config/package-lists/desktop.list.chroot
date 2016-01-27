@@ -4,3 +4,8 @@ i3
 feh
 fonts-inconsolata
 google-chrome-stable
+
+# atom depends
+gconf2
+libnotify4
+gvfs-bin
