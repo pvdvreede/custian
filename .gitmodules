@@ -13,3 +13,6 @@
 [submodule "config/includes.chroot/etc/skel/.vim/bundle/vim-easy-align"]
 	path = config/includes.chroot/etc/skel/.vim/bundle/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "config/includes.chroot/etc/skel/.emacs.d"]
+	path = config/includes.chroot/etc/skel/.emacs.d
+	url = https://github.com/syl20bnr/spacemacs
